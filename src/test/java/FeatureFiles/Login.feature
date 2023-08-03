@@ -3,6 +3,6 @@ Feature: Login Functionality
 
   Scenario: Login with valid username and password
     Given Navigate to Campus
-    And   Enter username and password
-    When  Click on login button
+    When   Enter username and password
+    And  Click on login button
     Then  User should be logged in successfully

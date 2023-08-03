@@ -37,4 +37,6 @@ public class DialogContent extends MyMethods {
 
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
     public WebElement successMessage;
+
+
 }

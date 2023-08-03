@@ -5,6 +5,6 @@ Feature: Country Functionality
     Given Navigate to Campus
     When   Enter username and password
     And  Click on login button
-    And Navigate to Country Page
+    And Navigate to Country page
     When Create a new country
     Then Success message should be displayed
