@@ -1,5 +1,6 @@
 package Utilities;
 
+import io.cucumber.java.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -26,6 +27,7 @@ public class BaseDriver {
         driver = null;
 
     }
+
     public static void closePreviousDrivers() {
         try {
             Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");

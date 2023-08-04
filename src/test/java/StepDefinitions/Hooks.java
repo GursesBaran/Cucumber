@@ -15,16 +15,14 @@ public class Hooks {
 
     @After
     public void afterScenario() {
-        BaseDriver.quitDriver();
+        //BaseDriver.quitDriver();
 
-    //@BeforeStep
-    //public void beforeStep()
-        //   System.out.println("Before Step");
-   // }
+        //@BeforeStep
+        //public void beforeStep()
+        //System.out.println("Before Step");
+        //@AfterStep
+        //public void afterStep() {
+        //System.out.println("After Step");
+        //}
 
-    //@AfterStep
-    //public void afterStep() {
-      //  System.out.println("After Step");
-   // }
-}
-}
+    }}
