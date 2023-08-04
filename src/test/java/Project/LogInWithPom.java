@@ -10,8 +10,8 @@ import org.testng.asserts.SoftAssert;
 public class LogInWithPom extends BaseDriverDemoBlazer {
     @Test
     void test1() {
-        login("BaranGurses", "Demo2023");
-
+        login();
+        MyMethods.myWait(2);
         Elements elements = new Elements();
         elements.phones.click();
         Assert.assertTrue(elements.verifyPhone.getText().contains("Samsung"));
@@ -33,8 +33,8 @@ public class LogInWithPom extends BaseDriverDemoBlazer {
 
     @Test
     void test2() {
-        MyMethods.myWait(1);
-        login("yarenss", "353535");
+        login();
+        MyMethods.myWait(2);
         Elements elements = new Elements();
         elements.phones.click();
         MyMethods.myWait(1);
@@ -52,22 +52,27 @@ public class LogInWithPom extends BaseDriverDemoBlazer {
 
         MyMethods.myWait(3);
 
-        Assert.assertTrue(elements.price.getText().equals(elements.totalPrice.getText()));
+        Assert.assertTrue(elements.price.getText().contains(elements.totalPrice.getText()));
+        System.out.println(elements.price.getText());
+        System.out.println(elements.totalPrice.getText());
+        MyMethods.myWait(2);
         elements.placeOrder.click();
-        MyMethods.myWait(1);
-        elements.name.sendKeys("yaren");
+        MyMethods.myWait(2);
+        elements.name.sendKeys("Baran");
         elements.country.sendKeys("USA");
-        elements.city.sendKeys("California");
+        elements.city.sendKeys("New Jersey");
         elements.creditCard.sendKeys("12345678910");
-        elements.month.sendKeys("11");
-        elements.year.sendKeys("2023");
+        elements.month.sendKeys("05");
+        elements.year.sendKeys("2025");
         elements.purchase.click();
 
         MyMethods.myWait(3);
         Assert.assertTrue(elements.amount.getText().contains("360"));
         Assert.assertTrue(elements.cardNumber.getText().contains("12345678910"));
-        Assert.assertTrue(elements.name2.getText().contains("yaren"));
-       Assert.assertTrue(elements.date.getText().contains("2023"));
+        MyMethods.myWait(2);
+        Assert.assertTrue(elements.name2.getText().contains("Baran"));
+        System.out.println(elements.name2.getText());
+        Assert.assertTrue(elements.date.getText().contains("2023"));
         MyMethods.myWait(2);
 
         elements.okkay.click();

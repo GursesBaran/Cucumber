@@ -35,17 +35,19 @@ public class BaseDriverDemoBlazer {
 
     }
 
-    public void login(String username, String passw) {
+    public void login() {
         driver.get("https://www.demoblaze.com/index.html");
+        MyMethods.myWait(2);
 
         WebElement loginButton = driver.findElement(By.id("login2"));
         loginButton.click();
+        MyMethods.myWait(2);
 
         WebElement userName = driver.findElement(By.id("loginusername"));
-        userName.sendKeys(username);
+        userName.sendKeys("BaranGurses");
 
         WebElement password = driver.findElement(By.id("loginpassword"));
-        password.sendKeys(passw);
+        password.sendKeys("Demo2023");
 
         WebElement login = driver.findElement(By.xpath("//button[text()='Log in']"));
         login.click();
