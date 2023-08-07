@@ -8,3 +8,11 @@ Feature: Country Functionality
     And Navigate to Country page
     When Create a new country
     Then Success message should be displayed
+
+  Scenario: Delete a country
+    Given Navigate to Campus
+    And Enter username and password
+    And Click on login button
+    And Navigate to Country page
+    When Delete a country
+    Then Success message should be displayed

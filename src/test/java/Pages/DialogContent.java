@@ -38,5 +38,18 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
     public WebElement successMessage;
 
+    @FindBy(xpath = "//input[@data-placeholder='Name']")
+    public WebElement searchNameInput;
 
+    @FindBy(xpath = "//input[@data-placeholder='Code']")
+    public WebElement searchCodeInput;
+
+    @FindBy(xpath = "//span[text()='Search']")
+    public WebElement searchButton;
+
+    @FindBy(xpath = "//button[@color='warn']")
+    public WebElement deleteButton;
+
+    @FindBy(xpath = "(//span[normalize-space()='Delete'])[1]")
+    public WebElement deleteConfirmButton;
 }

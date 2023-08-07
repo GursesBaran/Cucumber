@@ -35,9 +35,7 @@ public class LoginSteps {
     }
     @Then("User should be logged in successfully")
     public void user_should_be_logged_in_successfully() {
-        WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.visibilityOf(dc.dashBoard));
-        Assert.assertTrue(dc.dashBoard.isDisplayed());
+        dc.assertText(dc.dashBoard, "Dashboard");
 
 
     }
