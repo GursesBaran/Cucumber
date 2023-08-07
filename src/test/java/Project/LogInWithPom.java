@@ -1,11 +1,8 @@
 package Project;
 
-import Utilities.BaseDriver;
-import Utilities.BaseDriverDemoBlazer;
 import Utilities.MyMethods;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class LogInWithPom extends BaseDriverDemoBlazer {
     @Test
