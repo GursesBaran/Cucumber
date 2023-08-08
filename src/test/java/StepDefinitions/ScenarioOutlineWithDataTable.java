@@ -16,19 +16,19 @@ public class ScenarioOutlineWithDataTable {
         System.out.println(dataList.get(0).get(1));
     }
 
-    @When("Step two")
+    @When("Step Two")
     public void stepTwo() {
         System.out.println("Step 2");
     }
 
-    @And("Step three")
+    @And("Step Three")
     public void stepThree(DataTable dataTable) {
         List<List<String>> dataList = dataTable.asLists(String.class);
         System.out.println(dataList.get(0).get(0));
         System.out.println(dataList.get(0).get(1));
     }
 
-    @Then("Step four")
+    @Then("Step Four")
     public void stepFour() {
         System.out.println("Step 4");
     }
