@@ -11,37 +11,42 @@ import java.time.Duration;
 public class MyMethods {
 
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(10));
-    public void clickMethod(WebElement element){
+
+    public void clickMethod(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
         scrollToElement(element);
         element.click();
     }
 
-    public void sendKeysMethod(WebElement element, String text){
+    public void sendKeysMethod(WebElement element, String text) {
         waitUntilVisible(element);
         scrollToElement(element);
         element.clear();
         element.sendKeys(text);
     }
-    public static void myWait(int seconds) {
-        try {
-            Thread.sleep(seconds * 1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
-    }
-    public void assertText(WebElement element, String text){
+    public void assertText(WebElement element, String text) {
         waitUntilVisible(element);
         Assert.assertTrue(element.getText().contains(text));
     }
-    public void waitUntilVisible(WebElement element){
+
+    public void waitUntilVisible(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
 
     }
-    public void scrollToElement(WebElement element){
+
+    public void scrollToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) BaseDriver.getDriver();
         js.executeScript("arguments[0].scrollIntoView();", element);
     }
 
+    public static void myWait(int seconds) {
+        long milliseconds = seconds * 1000L; // Convert seconds to milliseconds
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+    }
 }
+
