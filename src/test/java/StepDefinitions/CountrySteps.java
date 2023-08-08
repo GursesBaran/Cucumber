@@ -35,7 +35,7 @@ public class CountrySteps {
 
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
-        dc.assertText(dc.successMessage, "successfully");
+        dc.assertText(dc.successMessage,"successfully");
     }
 
     @When("Delete a country")
