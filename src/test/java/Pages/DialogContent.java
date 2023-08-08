@@ -52,4 +52,8 @@ public class DialogContent extends MyMethods {
 
     @FindBy(xpath = "(//span[normalize-space()='Delete'])[1]")
     public WebElement deleteConfirmButton;
+
+    @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[2]")
+    public WebElement formShortNameInput;
 }
+

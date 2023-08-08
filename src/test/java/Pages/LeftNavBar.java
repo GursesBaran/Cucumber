@@ -20,4 +20,8 @@ public class LeftNavBar extends MyMethods {
 
     @FindBy(xpath = "(//span[text()='Countries'])[1]")
     public WebElement countriesButton;
+
+    @FindBy(xpath = "//span[text()='Citizenships']")
+    public WebElement citizenshipButton;
 }
+
