@@ -1,10 +1,12 @@
 package Utilities;
+
 import io.cucumber.java.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.io.IOException;
@@ -15,7 +17,7 @@ public class BaseDriver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            closePreviousDrivers();
+
             Logger logger = Logger.getLogger("");
             logger.setLevel(Level.SEVERE);
             driver = new ChromeDriver();

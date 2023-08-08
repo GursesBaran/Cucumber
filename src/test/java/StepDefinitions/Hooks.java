@@ -15,7 +15,7 @@ public class Hooks {
 
     @After
     public void afterScenario() {
-        //BaseDriver.quitDriver();
+        BaseDriver.quitDriver();
 
         //@BeforeStep
         //public void beforeStep()
