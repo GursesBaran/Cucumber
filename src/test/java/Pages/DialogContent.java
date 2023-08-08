@@ -58,5 +58,13 @@ public class DialogContent extends MyMethods {
 
     @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[1]")
     public WebElement SearchShortNameInput;
+
+    @FindBy(xpath = "//span[text()='Integration Code']")
+    public WebElement feeIntegrationCode;
+
+    @FindBy(xpath = "(//input[@data-placeholder='Priority'])[2]")
+    public WebElement feePriority;
+
+
 }
 
