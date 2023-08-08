@@ -29,9 +29,11 @@ public class BaseDriver {
     }
 
     public static void quitDriver() {
-        driver.quit();
-        driver = null;
+        if (driver != null) {
+            driver.quit();
+            driver = null;
 
+        }
     }
 
     public static void closePreviousDrivers() {
