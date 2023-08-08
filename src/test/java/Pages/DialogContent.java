@@ -38,7 +38,7 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
     public WebElement successMessage;
 
-    @FindBy(xpath = "//input[@data-placeholder='Name']")
+    @FindBy(xpath = "//input[starts-with(@id, 'ms-text-field-') and @data-placeholder=\"Name\"]")
     public WebElement searchNameInput;
 
     @FindBy(xpath = "//input[@data-placeholder='Code']")
@@ -55,5 +55,8 @@ public class DialogContent extends MyMethods {
 
     @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[2]")
     public WebElement formShortNameInput;
+
+    @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[1]")
+    public WebElement SearchShortNameInput;
 }
 

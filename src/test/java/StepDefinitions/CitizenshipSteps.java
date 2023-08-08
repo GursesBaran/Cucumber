@@ -4,6 +4,9 @@ import Pages.DialogContent;
 import Pages.LeftNavBar;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CitizenshipSteps {
 
@@ -21,5 +24,20 @@ public class CitizenshipSteps {
     public void enterAsCitizenshipNameAndAsShortName(String citizenshipName, String citizenshipShortName){
         dc.sendKeysMethod(dc.formNameInput,citizenshipName);
         dc.sendKeysMethod(dc.formShortNameInput,citizenshipShortName);
+    }
+
+    @And("Search for the citizenship with the name {string} and short name {string}")
+    public void searchForTheCitizenshipWithTheNameAndShortName(String citizenshipName, String citizenshipShortName) {
+        dc.sendKeysMethod(dc.searchNameInput,citizenshipName);
+        dc.sendKeysMethod(dc.SearchShortNameInput,citizenshipShortName);
+        dc.clickMethod(dc.searchButton);
+
+    }
+
+    @When("Delete Citizenship")
+    public void deleteCitizenship() {
+        dc.wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//button[@color='warn']"), 1));
+        dc.clickMethod(dc.deleteButton);
+        dc.clickMethod(dc.deleteConfirmButton);
     }
 }
