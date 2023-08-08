@@ -8,7 +8,6 @@ Feature: Citizenship Functionality
 
 
   Scenario Outline: Create a Citizenship
-    And Navigate to Citizenship page
     And Click on add button
     Then Enter "<CitizenshipName>" as citizenship name and "<CitizenshipShortName>" as short name
     When Click on save button
