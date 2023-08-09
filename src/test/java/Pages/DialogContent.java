@@ -50,19 +50,19 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//button[@color='warn']")
     public WebElement deleteButton;
 
-    @FindBy(xpath = "(//span[normalize-space()='Delete'])[1]")
+    @FindBy(xpath = "//span[normalize-space()='Delete'][1]")
     public WebElement deleteConfirmButton;
 
-    @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[2]")
+    @FindBy(xpath = "//input[@data-placeholder='Short Name'][2]")
     public WebElement formShortNameInput;
 
-    @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[1]")
+    @FindBy(xpath = "//input[@data-placeholder='Short Name'][1]")
     public WebElement SearchShortNameInput;
 
-    @FindBy(xpath = "//span[text()='Integration Code']")
+    @FindBy(xpath = "//input[@data-placeholder='Integration Code']")
     public WebElement feeIntegrationCode;
 
-    @FindBy(xpath = "(//input[@data-placeholder='Priority'])[2]")
+    @FindBy(xpath = "//input[@inputmode='numeric']")
     public WebElement feePriority;
 
 
