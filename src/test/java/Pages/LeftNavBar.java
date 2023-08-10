@@ -26,5 +26,14 @@ public class LeftNavBar extends MyMethods {
 
     @FindBy(xpath = "//span[normalize-space()='Fees']")
     public WebElement feesButton;
+
+    @FindBy(xpath = "(//span[contains(text(),'Entrance Exams')])[1]")
+    public WebElement entranceExamsButton1;
+
+    @FindBy(xpath = "(//span[contains(text(),'Setup')])[3]")
+    public WebElement entranceExamsSetupButton;
+
+    @FindBy(xpath = "(//span[contains(text(),'Entrance Exams')])[2]")
+    public WebElement entranceExamsButton2;
 }
 
