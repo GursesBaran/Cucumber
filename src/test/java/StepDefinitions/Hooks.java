@@ -1,10 +1,9 @@
 package StepDefinitions;
 
 import Utilities.BaseDriver;
-import io.cucumber.java.After;
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
+import io.cucumber.java.*;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
 
@@ -14,8 +13,17 @@ public class Hooks {
     }
 
     @After
-    public void afterScenario() {
+    public void afterScenario(Scenario scenario) {
+        if (scenario.isFailed()) {
+            final byte[] byteImage = ((TakesScreenshot) BaseDriver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(byteImage, "image/png", scenario.getName());
+
+
+        }
+
         BaseDriver.quitDriver();
+
+    }
 
         //@BeforeStep
         //public void beforeStep()
@@ -25,4 +33,4 @@ public class Hooks {
         //System.out.println("After Step");
         //}
 
-    }}
+    }

@@ -1,6 +1,6 @@
 package Pages;
 
-import Utilities.BaseDriver;
+import Utilities.ParameterDriver;
 import Utilities.MyMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LeftNavBar extends MyMethods {
     public LeftNavBar() {
-        PageFactory.initElements(BaseDriver.getDriver(),this);
+        PageFactory.initElements(ParameterDriver.getDriver(),this);
 
     }
     @FindBy(xpath = "(//span[text()='Setup'])[1]")

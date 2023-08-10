@@ -22,8 +22,7 @@ public class BaseDriver {
             logger.setLevel(Level.SEVERE);
             driver = new ChromeDriver();
             driver.manage().window().maximize();
-            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
         }
         return driver;
     }
