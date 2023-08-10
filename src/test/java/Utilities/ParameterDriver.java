@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -14,15 +15,23 @@ public class ParameterDriver {
 
     public static WebDriver getDriver() {
         if (threadDriver.get() == null) {
+
+            if (threadDriverName.get()==null){
+                threadDriverName.set("chrome");
+            }
+            Logger logger = Logger.getLogger("");
+            logger.setLevel(Level.SEVERE);
+
             switch (threadDriverName.get()) {
-                case "chrome":
-                    threadDriver.set(new ChromeDriver());
+                case "firefox":
+                    threadDriver.set(new FirefoxDriver());
+                    break;
+                case "safari":
+                    threadDriver.set(new SafariDriver());
                     break;
                 case "edge":
                     threadDriver.set(new EdgeDriver());
-                    break;
-                case "firefox":
-                    threadDriver.set(new FirefoxDriver());
+
                     break;
                 default:
                     threadDriver.set(new ChromeDriver());
@@ -33,10 +42,9 @@ public class ParameterDriver {
         return threadDriver.get();
     }
 
-    public static void quitDriver() {
-        if (threadDriver != null) {
+    public static void quitDriver(){
+        if (threadDriver!=null){
             threadDriver.get().quit();
-
         }
     }
 }
