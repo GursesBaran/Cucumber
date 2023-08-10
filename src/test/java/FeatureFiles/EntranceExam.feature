@@ -3,7 +3,7 @@ Feature: Entrance Exams Functionality
   Background:
     Given Navigate to Campus
     When Enter username and password
-    And Click on Login Button
+    And Click on login button
 
   Scenario Outline: Create an Entrance exam
     And Go to Entrance Exams page
