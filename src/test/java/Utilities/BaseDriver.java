@@ -17,13 +17,14 @@ public class BaseDriver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-
+            closePreviousDrivers();
             Logger logger = Logger.getLogger("");
             logger.setLevel(Level.SEVERE);
             driver = new ChromeDriver();
             driver.manage().window().maximize();
-
         }
+
+
         return driver;
     }
 
@@ -31,7 +32,6 @@ public class BaseDriver {
         if (driver != null) {
             driver.quit();
             driver = null;
-
         }
     }
 

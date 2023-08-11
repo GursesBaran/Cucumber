@@ -29,7 +29,7 @@ public class CitizenshipSteps {
     @And("Search for the citizenship with the name {string} and short name {string}")
     public void searchForTheCitizenshipWithTheNameAndShortName(String citizenshipName, String citizenshipShortName) {
         dc.sendKeysMethod(dc.searchNameInput,citizenshipName);
-        dc.sendKeysMethod(dc.SearchShortNameInput,citizenshipShortName);
+        dc.sendKeysMethod(dc.searchShortNameInput,citizenshipShortName);
         dc.clickMethod(dc.searchButton);
 
     }

@@ -1,6 +1,8 @@
 package StepDefinitions;
 import Pages.DialogContent;
 import Utilities.BaseDriver;
+import Utilities.MyMethods;
+import Utilities.ParameterDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,12 +18,13 @@ public class LoginSteps {
 
     @Given("Navigate to Campus")
     public void navigate_to_campus() {
-        BaseDriver.getDriver().get("https://test.mersys.io/");
+        ParameterDriver.getDriver().get("https://test.mersys.io/");
 
 
     }
     @When("Enter username and password")
     public void enter_username_and_password() {
+        MyMethods.myWait(5);
         dc.sendKeysMethod(dc.username, "turkeyts");
         dc.sendKeysMethod(dc.password, "TechnoStudy123");
 

@@ -9,9 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LeftNavBar extends MyMethods {
     public LeftNavBar() {
-        PageFactory.initElements(ParameterDriver.getDriver(),this);
+        PageFactory.initElements(ParameterDriver.getDriver(), this);
 
     }
+
     @FindBy(xpath = "(//span[text()='Setup'])[1]")
     public WebElement setUpButton;
 

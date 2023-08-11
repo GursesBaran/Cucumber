@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import Utilities.BaseDriver;
+import Utilities.ParameterDriver;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -21,7 +22,7 @@ public class Hooks {
 
         }
 
-        BaseDriver.quitDriver();
+        ParameterDriver.quitDriver();
 
     }
 

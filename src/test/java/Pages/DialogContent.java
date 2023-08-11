@@ -38,7 +38,7 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
     public WebElement successMessage;
 
-    @FindBy(xpath = "//input[starts-with(@id, 'ms-text-field-') and @data-placeholder=\"Name\"]")
+    @FindBy(xpath = "//input[@data-placeholder='Name']")
     public WebElement searchNameInput;
 
     @FindBy(xpath = "//input[@data-placeholder='Code']")
@@ -50,19 +50,19 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//button[@color='warn']")
     public WebElement deleteButton;
 
-    @FindBy(xpath = "//span[normalize-space()='Delete'][1]")
+    @FindBy(xpath = "(//span[normalize-space()='Delete'])[1]")
     public WebElement deleteConfirmButton;
 
-    @FindBy(xpath = "//input[@data-placeholder='Short Name'][2]")
+    @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[2]")
     public WebElement formShortNameInput;
 
-    @FindBy(xpath = "//input[@data-placeholder='Short Name'][1]")
-    public WebElement SearchShortNameInput;
+    @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[1]")
+    public WebElement searchShortNameInput;
 
     @FindBy(xpath = "//input[@data-placeholder='Integration Code']")
     public WebElement feeIntegrationCode;
 
-    @FindBy(xpath = "//input[@inputmode='numeric']")
+    @FindBy(xpath = "(//input[@data-placeholder='Priority'])[2]")
     public WebElement feePriority;
 
     @FindBy(xpath = "//input[@type='text']")
@@ -91,7 +91,4 @@ public class DialogContent extends MyMethods {
 
     @FindBy(css = "iframe[class=\"tox-edit-area__iframe\"]")
     public WebElement iFrame;
-
-
 }
-
