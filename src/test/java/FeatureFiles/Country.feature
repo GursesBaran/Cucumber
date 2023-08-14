@@ -35,7 +35,7 @@ Feature: Country Functionality
     When Delete a country
     Then Success message should be displayed
 @Regression
-  Scenario:
+  Scenario: Create a country with parameters
 #      Given Navigate to Campus
 #      And Enter username and password
 #      And Click on Login Button
@@ -46,7 +46,7 @@ Feature: Country Functionality
     Then Success message should be displayed
 
       #TODO Update the country you created
-
+@Regression
   Scenario: Delete a country
 #    Given Navigate to Campus
 #    And Enter username and password

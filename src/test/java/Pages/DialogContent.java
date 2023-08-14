@@ -23,7 +23,7 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//div[@class='ng-star-inserted']//span[contains(text(),'Dashboard')]")
     public WebElement dashBoard;
 
-    @FindBy(css = "svg[class='svg-inline--fa fa-plus']")
+    @FindBy(xpath = "//ms-add-button[@table='true']//span[3]")
     public WebElement addButton;
 
     @FindBy(xpath = "(//input[@data-placeholder='Name'])[2]")
