@@ -10,13 +10,6 @@ import org.testng.annotations.AfterClass;
         glue = "StepDefinitions",
         tags = "@Smoke",
         plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-
-
-
-
-
-
-
 )
 public class RunnerWithExtentReport extends AbstractTestNGCucumberTests {
 
@@ -30,36 +23,5 @@ public class RunnerWithExtentReport extends AbstractTestNGCucumberTests {
         ExtentService.getInstance().setSystemInfo("Operating System",System.getProperty("os.name"));
         ExtentService.getInstance().setSystemInfo("Department","QA");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
 }

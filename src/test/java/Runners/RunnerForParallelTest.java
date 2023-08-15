@@ -13,11 +13,6 @@ import org.testng.annotations.Parameters;
         glue = "StepDefinitions",
         plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
         tags = "@Regression"
-
-
-
-
-
 )
 
 public class RunnerForParallelTest extends AbstractTestNGCucumberTests {
@@ -36,11 +31,4 @@ public class RunnerForParallelTest extends AbstractTestNGCucumberTests {
         ExtentService.getInstance().setSystemInfo("Department","QA");
 
     }
-
-
-
-
-
-
-
 }
