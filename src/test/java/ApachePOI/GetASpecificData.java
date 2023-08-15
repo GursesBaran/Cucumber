@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class GetASpecificData {
     /**
      * Write the code that gives specific data the user wants
-     * E.g. When user types username print the username from the excel file
+     * E.g. When user types username print the username from the Excel file
      * */
 
     public static void main(String[] args) throws IOException {

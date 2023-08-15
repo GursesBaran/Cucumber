@@ -16,13 +16,13 @@ public class ApachePOIStart {
         Cell cell1 = row1.getCell(0);
         System.out.println(cell1);
 
+
         Cell cell2 = row1.getCell(1);
         System.out.println(cell2);
 
         Row row3= sheet.getRow(3);
         Cell cell3=row3.getCell(1);
         System.out.println(cell3);
-
 
 
 
