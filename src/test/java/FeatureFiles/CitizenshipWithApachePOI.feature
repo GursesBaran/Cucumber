@@ -7,4 +7,4 @@ Feature: Citizenship with Apache POI
     And Navigate to Citizenship page
 
   Scenario: Create a new Citizenship
-    When Create a citizenship with Apache POI
+    Then Create a citizenship with Apache POI
