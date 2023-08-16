@@ -21,8 +21,9 @@ public class CitizenshipWithApachePOI {
             dc.sendKeysMethod(dc.formNameInput, citizenShipData.get(i).get(0));
             dc.sendKeysMethod(dc.formShortNameInput, citizenShipData.get(i).get(1));
             dc.clickMethod(dc.saveButton);
-            dc.assertText(dc.successMessage, "successfully");
             dc.wait.until(ExpectedConditions.invisibilityOf(dc.successMessage));
+            dc.assertText(dc.successMessage, "successfully");
+
         }
     }
 }
