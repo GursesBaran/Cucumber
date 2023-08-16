@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class WriteInADifferentRow {
     public static void main(String[] args) throws IOException {
-        String path = "src/test/java/ApachePOI/Resources/WriteIntoAnExistingExcelFile.xlsx";
+        String path = "src/test/java/ApachePOI/Resources/WriteIntoAnExcelFile.xlsx";
 
         FileInputStream fileInputStream = new FileInputStream(path);
         Workbook workbook = WorkbookFactory.create(fileInputStream);
