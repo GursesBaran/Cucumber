@@ -8,7 +8,7 @@ public class IntroToJDBC {
 
     @Test
     public void Test1() throws SQLException {
-        String url = "jdbc:mysql//db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com:3306/sakila";
+        String url = "jdbc:mysql://db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com:3306/sakila";
         // url contains type of connection(jdbc), type of database(mysql), url to remote server that our database is stored
         // port number of our database, name of the database.
 
