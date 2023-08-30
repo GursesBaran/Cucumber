@@ -33,6 +33,10 @@ public class AbsoluteandRelative extends DBUtilities {
         title = rs.getString("title");
         System.out.println("title from the 9th row " + title);
 
+        rs.absolute(-2);
+        title = rs.getString("title");
+        System.out.println("title from the 999th row " + title);
+
 
 
 
