@@ -11,7 +11,6 @@ public class DBUtilities {
 
     @BeforeTest
     public void DBConnectionCreate(){
-
         String url = "jdbc:mysql://db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com:3306/sakila";
 
         String username = "root";

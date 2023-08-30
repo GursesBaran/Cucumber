@@ -62,6 +62,7 @@ public class BeforeAfter {
         rs.previous(); // moves one step back to the previous row
         language = rs.getString("name");
         System.out.println("language from the 1st row = " + language);
+
     }
 }
 
