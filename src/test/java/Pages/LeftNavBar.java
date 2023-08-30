@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import javax.xml.xpath.XPath;
+
 public class LeftNavBar extends MyMethods {
     public LeftNavBar() {
         PageFactory.initElements(ParameterDriver.getDriver(), this);
@@ -36,5 +38,8 @@ public class LeftNavBar extends MyMethods {
 
     @FindBy(xpath = "(//span[contains(text(),'Entrance Exams')])[2]")
     public WebElement entranceExamsButton2;
+
+    @FindBy(xpath = "//span[normalize-space()='States']")
+    public WebElement statesButton;
 }
 
