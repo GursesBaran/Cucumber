@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -34,7 +35,12 @@ public class ParameterDriver {
 
                     break;
                 default:
-                    threadDriver.set(new ChromeDriver());
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--remote-allow-origins=*"); // To solve the error with Chrome v111
+                    if (!runningFromIntellij()) {
+                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
+                    }
+                    threadDriver.set(new ChromeDriver(options));
                     break;
             }
             threadDriver.get().manage().window().maximize();
@@ -51,5 +57,10 @@ public class ParameterDriver {
     }
     public static void setThreadDriverName(String browserName){
         threadDriverName.set(browserName);
+    }
+
+    public static boolean runningFromIntellij() { // checks if the test is being run by intellij
+        String classpath = System.getProperty("java.class.path");
+        return classpath.contains("idea_rt.jar");
     }
 }
