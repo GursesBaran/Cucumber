@@ -98,7 +98,7 @@
 
     </dependencies>
 
-    //USED XML TO CONNECT JENKINS
+<!--    USED XML TO CONNECT JENKINS-->
     <!--    <build>-->
     <!--        <plugins>-->
 
@@ -116,7 +116,7 @@
     <!--        </plugins>-->
     <!--    </build>-->
 
-//USED REGULAR CLASS TO CONNECT JENKINS
+<!--USED REGULAR CLASS TO CONNECT JENKINS-->
     <build>
         <plugins>
 
