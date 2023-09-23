@@ -56,7 +56,7 @@ public class ParameterDriver {
         }
     }
     public static void setThreadDriverName(String browserName){
-        threadDriverName.set(browserName);
+        threadDriverName.set(browserName.toLowerCase());
     }
 
     public static boolean runningFromIntellij() { // checks if the test is being run by intellij

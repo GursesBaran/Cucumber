@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Campus Smoke - Cucumber Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 14, 2023 01:33:36 PM</span></a>
+<a href="#"><span class="badge badge-primary">Sep 23, 2023 07:49:46 PM</span></a>
 </li>
 </ul>
 </div>
@@ -84,7 +84,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@Smoke</a>
+<a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Regression</a>
 </ul>
 </li>
 </ul>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">Country Functionality</p>
             <p class="text-sm">
-              <span>1:33:36 PM</span> / <span>00:01:02:098</span>
+              <span>7:49:46 PM</span> / <span>00:00:16:503</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Country Functionality</h5>
-<span class='badge badge-success'>08.14.2023 1:33:36 PM</span>
-<span class='badge badge-danger'>08.14.2023 1:34:38 PM</span>
-<span class='badge badge-default'>00:01:02:098</span>
+<span class='badge badge-success'>09.23.2023 7:49:46 PM</span>
+<span class='badge badge-danger'>09.23.2023 7:50:03 PM</span>
+<span class='badge badge-default'>00:00:16:503</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -122,9 +122,6 @@ so that I can update the country list</div>
     <div class="card-header" role="tab">
       <div class="card-title">
         <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Create a country with parameters</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
       </div>
     </div>
         <div class="">
@@ -149,65 +146,92 @@ so that I can update the country list</div>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="StepDefinitions.CountrySteps.clickOnAddButton()">
+              <div class="step pass-bg" title="StepDefinitions.CountrySteps.clickOnAddButton()">
                 <span>And Click on add button</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <svg role="img" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" class="svg-inline--fa fa-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">...</svg> is not clickable at point (1292, 176). Other element would receive the click: <span class="mat-mdc-button-touch-target"></span>
-  (Session info: MicrosoftEdge=115.0.1901.203)
-Build info: version: '4.10.0', revision: 'c14d967899'
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.CountrySteps.enterAsCountryNameAndAsCountryCode(java.lang.String,java.lang.String)">
+                <span>And Enter "Batch 8" as country name and "BTC" as country code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.CountrySteps.clickOnSaveButton()">
+                <span>When Click on save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefinitions.CountrySteps.successMessageShouldBeDisplayed()">
+                <span>Then Success message should be displayed</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [9cd6554fe918a0f781f77f5a8cda3f0f, clickElement {id=188E3B76426984D656C5C4BE6940E592_element_68}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.203, ms:edgeOptions: {debuggerAddress: localhost:58865}, msedge: {msedgedriverVersion: 115.0.1901.203 (a5a2b1779bc..., userDataDir: C:\Users\baran\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58865/devtoo..., se:cdpVersion: 115.0.1901.203, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on windows (9cd6554fe918a0f781f77f5a8cda3f0f)] -> css selector: svg[class='svg-inline--fa fa-plus']]
-Session ID: 9cd6554fe918a0f781f77f5a8cda3f0f
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30c2ff454f847518475be1a8fef4282b, findElement {using=xpath, value=//div[contains(text(),'successfully')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\baran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64381}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64381/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30c2ff454f847518475be1a8fef4282b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
-	at Utilities.MyMethods.clickMethod(MyMethods.java:19)
-	at StepDefinitions.CountrySteps.clickOnAddButton(CountrySteps.java:59)
-	at ✽.Click on add button(file:///C:/Users/baran/IdeaProjects/Cucumber/src/test/java/FeatureFiles/Country.feature:43)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4230)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
+	at java.base/java.lang.String.valueOf(String.java:4230)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
+	at Utilities.MyMethods.waitUntilVisible(MyMethods.java:35)
+	at Utilities.MyMethods.assertText(MyMethods.java:30)
+	at StepDefinitions.CountrySteps.successMessageShouldBeDisplayed(CountrySteps.java:38)
+	at ✽.Success message should be displayed(file:///C:/Users/baran/IdeaProjects/Cucumber/src/test/java/FeatureFiles/Country.feature:46)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" title="StepDefinitions.CountrySteps.enterAsCountryNameAndAsCountryCode(java.lang.String,java.lang.String)">
-                <span>And Enter "Batch 8" as country name and "BTC" as country code</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.CountrySteps.clickOnSaveButton()">
-                <span>When Click on save button</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.CountrySteps.successMessageShouldBeDisplayed()">
-                <span>Then Success message should be displayed</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
+              <div class="step fail-bg" title="AFTER">
                 <span>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
-      <div>Create a country with parameters
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
-    
-    </div></div>
-</div>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30c2ff454f847518475be1a8fef4282b, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\baran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64381}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64381/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30c2ff454f847518475be1a8fef4282b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
+	at StepDefinitions.Hooks.afterScenario(Hooks.java:26)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -217,142 +241,56 @@ Session ID: 9cd6554fe918a0f781f77f5a8cda3f0f
     <div class="card-header" role="tab">
       <div class="card-title">
         <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>Delete a country</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.LoginSteps.navigate_to_campus()">
+              <div class="step fail-bg" title="StepDefinitions.LoginSteps.navigate_to_campus()">
                 <span>Given Navigate to Campus</span>
       <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.LoginSteps.enter_username_and_password()">
-                <span>And Enter username and password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.LoginSteps.click_on_login_button()">
-                <span>And Click on login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.CountrySteps.navigateToCountryPage()">
-                <span>And Navigate to Country page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="StepDefinitions.CountrySteps.deleteACountry()">
-                <span>When Delete a country</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of elements found by By.xpath: //button[@color='warn'] to be "1". Current number: "0" (tried for 4 second(s) with 500 milliseconds interval)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.203, ms:edgeOptions: {debuggerAddress: localhost:58926}, msedge: {msedgedriverVersion: 115.0.1901.203 (a5a2b1779bc..., userDataDir: C:\Users\baran\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58926/devtoo..., se:cdpVersion: 115.0.1901.203, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c2ae959d22df2b5464cc01caa480fb52
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at StepDefinitions.CountrySteps.deleteACountry(CountrySteps.java:52)
-	at ✽.Delete a country(file:///C:/Users/baran/IdeaProjects/Cucumber/src/test/java/FeatureFiles/Country.feature:55)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.CountrySteps.successMessageShouldBeDisplayed()">
-                <span>Then Success message should be displayed</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
-      <div>Delete a country
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../screenshots/embedded2.png' src="../screenshots/embedded2.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="29"><span class="badge log fail-bg mr-2">Fail</span>Create a country with parameters</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.LoginSteps.navigate_to_campus()">
-                <span>Given Navigate to Campus</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.LoginSteps.enter_username_and_password()">
-                <span>And Enter username and password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.LoginSteps.click_on_login_button()">
-                <span>And Click on login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.CountrySteps.navigateToCountryPage()">
-                <span>And Navigate to Country page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="StepDefinitions.CountrySteps.clickOnAddButton()">
-                <span>And Click on add button</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <svg role="img" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" class="svg-inline--fa fa-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">...</svg> is not clickable at point (1347, 176). Other element would receive the click: <span class="mat-mdc-button-touch-target"></span>
-  (Session info: chrome=115.0.5790.171)
-Build info: version: '4.10.0', revision: 'c14d967899'
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [470c1d0537690c276ead1bced7445941, clickElement {id=9577996373359F618D09188A9507F906_element_68}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\baran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58981}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58981/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (470c1d0537690c276ead1bced7445941)] -> css selector: svg[class='svg-inline--fa fa-plus']]
-Session ID: 470c1d0537690c276ead1bced7445941
+Command: [30c2ff454f847518475be1a8fef4282b, get {url=https://test.mersys.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\baran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64381}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64381/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30c2ff454f847518475be1a8fef4282b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
-	at Utilities.MyMethods.clickMethod(MyMethods.java:19)
-	at StepDefinitions.CountrySteps.clickOnAddButton(CountrySteps.java:59)
-	at ✽.Click on add button(file:///C:/Users/baran/IdeaProjects/Cucumber/src/test/java/FeatureFiles/Country.feature:43)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at StepDefinitions.LoginSteps.navigate_to_campus(LoginSteps.java:21)
+	at ✽.Navigate to Campus(file:///C:/Users/baran/IdeaProjects/Cucumber/src/test/java/FeatureFiles/Country.feature:17)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" title="StepDefinitions.CountrySteps.enterAsCountryNameAndAsCountryCode(java.lang.String,java.lang.String)">
-                <span>And Enter "Batch 8" as country name and "BTC" as country code</span>
+              <div class="step skip-bg" title="StepDefinitions.LoginSteps.enter_username_and_password()">
+                <span>And Enter username and password</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step skip-bg" title="StepDefinitions.CountrySteps.clickOnSaveButton()">
-                <span>When Click on save button</span>
+              <div class="step skip-bg" title="StepDefinitions.LoginSteps.click_on_login_button()">
+                <span>And Click on login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinitions.CountrySteps.navigateToCountryPage()">
+                <span>And Navigate to Country page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinitions.CountrySteps.deleteACountry()">
+                <span>When Delete a country</span>
       <div>Step skipped
       </div>
               </div>
@@ -361,82 +299,34 @@ Session ID: 470c1d0537690c276ead1bced7445941
       <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER">
+              <div class="step fail-bg" title="AFTER">
                 <span>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
-      <div>Create a country with parameters
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../screenshots/embedded3.png' src="../screenshots/embedded3.png">
-    
-    </div></div>
-</div>
       <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="40"><span class="badge log fail-bg mr-2">Fail</span>Delete a country</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.LoginSteps.navigate_to_campus()">
-                <span>Given Navigate to Campus</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.LoginSteps.enter_username_and_password()">
-                <span>And Enter username and password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.LoginSteps.click_on_login_button()">
-                <span>And Click on login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.CountrySteps.navigateToCountryPage()">
-                <span>And Navigate to Country page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="StepDefinitions.CountrySteps.deleteACountry()">
-                <span>When Delete a country</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of elements found by By.xpath: //button[@color='warn'] to be "1". Current number: "0" (tried for 4 second(s) with 500 milliseconds interval)
-Build info: version: '4.10.0', revision: 'c14d967899'
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\baran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59018}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59018/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf52baccacb47344f038f708275e88db
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at StepDefinitions.CountrySteps.deleteACountry(CountrySteps.java:52)
-	at ✽.Delete a country(file:///C:/Users/baran/IdeaProjects/Cucumber/src/test/java/FeatureFiles/Country.feature:55)
+Command: [30c2ff454f847518475be1a8fef4282b, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\baran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64381}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64381/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30c2ff454f847518475be1a8fef4282b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
+	at StepDefinitions.Hooks.afterScenario(Hooks.java:26)
 </textarea>
       
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.CountrySteps.successMessageShouldBeDisplayed()">
-                <span>Then Success message should be displayed</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
-      <div>Delete a country
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../screenshots/embedded4.png' src="../screenshots/embedded4.png">
-    
-    </div></div>
-</div>
-      <div>
       </div>
               </div>
           </div>
@@ -452,7 +342,7 @@ Session ID: bf52baccacb47344f038f708275e88db
           <div class="test-detail">
             <p class="name">Data Table Example</p>
             <p class="text-sm">
-              <span>1:34:07 PM</span> / <span>00:00:31:115</span>
+              <span>7:50:03 PM</span> / <span>00:00:00:099</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -461,9 +351,9 @@ Session ID: bf52baccacb47344f038f708275e88db
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Data Table Example</h5>
-<span class='badge badge-success'>08.14.2023 1:34:07 PM</span>
-<span class='badge badge-danger'>08.14.2023 1:34:38 PM</span>
-<span class='badge badge-default'>00:00:31:115</span>
+<span class='badge badge-success'>09.23.2023 7:50:03 PM</span>
+<span class='badge badge-danger'>09.23.2023 7:50:03 PM</span>
+<span class='badge badge-default'>00:00:00:099</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -500,47 +390,72 @@ Session ID: bf52baccacb47344f038f708275e88db
               <div class="step fail-bg" title="AFTER">
                 <span>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "java.lang.ThreadLocal.get()" is null
-	at Utilities.ParameterDriver.quitDriver(ParameterDriver.java:47)
-	at StepDefinitions.Hooks.afterScenario(Hooks.java:25)
-</textarea>
-      
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="49"><span class="badge log fail-bg mr-2">Fail</span>Single Data Table</div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.DataTableSteps.GototheWebPage()">
-                <span>Given Go to the WebPage</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.DataTableSteps.fillTheFormWithValidData(io.cucumber.datatable.DataTable)">
-                <span>And Fill the form with valid data</span>
-      <div><table class='markup-table table '><tr><td>John</td></tr><tr><td>Snow</td></tr><tr><td>2345 Winter St.</td></tr><tr><td>8563241256</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.DataTableSteps.saveTheForm()">
-                <span>Then Save the form</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "java.lang.ThreadLocal.get()" is null
-	at Utilities.ParameterDriver.quitDriver(ParameterDriver.java:47)
-	at StepDefinitions.Hooks.afterScenario(Hooks.java:25)
+        <textarea disabled class="code-block">org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
+	at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:97)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:36)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.lambda$create$2(WorkbookFactory.java:224)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.wp(WorkbookFactory.java:329)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:224)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at Utilities.Excel.writeInExcel(Excel.java:73)
+	at StepDefinitions.Hooks.afterScenario(Hooks.java:29)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0XC000808
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
+	at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:97)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.create(XSSFWorkbookFactory.java:36)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.lambda$create$2(WorkbookFactory.java:224)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.wp(WorkbookFactory.java:329)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:224)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at Utilities.Excel.writeInExcel(Excel.java:73)
+	at StepDefinitions.Hooks.afterScenario(Hooks.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
 </textarea>
       
       </div>
@@ -564,22 +479,22 @@ Session ID: bf52baccacb47344f038f708275e88db
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log badge-danger'>4</span>
 </span>
-<p class="name">org.openqa.selenium.TimeoutException</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.TimeoutException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -592,21 +507,41 @@ Session ID: bf52baccacb47344f038f708275e88db
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:01 PM</td>
+<td>19:49:59 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='19'>When Delete a country</a>
+<a href="#" class="linked" test-id='1' id='11'>Then Success message should be displayed</a>
 <div class="">
-<span class="badge badge-default">Country Functionality.Delete a country.When Delete a country</span>
+<span class="badge badge-default">Country Functionality.Create a country with parameters.Then Success message should be displayed</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:32 PM</td>
+<td>19:50:03 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='46'>When Delete a country</a>
+<a href="#" class="linked" test-id='1' id='12'>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</a>
 <div class="">
-<span class="badge badge-default">Country Functionality.Delete a country.When Delete a country</span>
+<span class="badge badge-default">Country Functionality.Create a country with parameters.StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>Given Navigate to Campus</a>
+<div class="">
+<span class="badge badge-default">Country Functionality.Delete a country.Given Navigate to Campus</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Country Functionality.Delete a country.StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>
@@ -617,15 +552,15 @@ Session ID: bf52baccacb47344f038f708275e88db
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.NullPointerException</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.NullPointerException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -638,67 +573,11 @@ Session ID: bf52baccacb47344f038f708275e88db
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:07 PM</td>
+<td>19:50:03 PM</td>
 <td>
 <a href="#" class="linked" test-id='22' id='28'>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</a>
 <div class="">
 <span class="badge badge-default">Data Table Example.Single Data Table.StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:38 PM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='54'>StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Data Table Example.Single Data Table.StepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>2</span>
-</span>
-<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:33:47 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='8'>And Click on add button</a>
-<div class="">
-<span class="badge badge-default">Country Functionality.Create a country with parameters.And Click on add button</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:20 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='35'>And Click on add button</a>
-<div class="">
-<span class="badge badge-default">Country Functionality.Create a country with parameters.And Click on add button</span>
 </div>
 </td>
 </tr>
@@ -725,15 +604,15 @@ Session ID: bf52baccacb47344f038f708275e88db
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>6</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@Regression</p>
-<p class="duration text-sm">6 tests</p>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Regression</h4>
-<span status="fail" class='badge log badge-danger'>6 failed</span>
+<h4>@Smoke</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -746,59 +625,9 @@ Session ID: bf52baccacb47344f038f708275e88db
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:33:36 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Create a country with parameters</a>
-<div class="">
-<span class="badge badge-default">Country Functionality.Create a country with parameters</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:33:51 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='13'>Delete a country</a>
-<div class="">
-<span class="badge badge-default">Country Functionality.Delete a country</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:07 PM</td>
+<td>19:50:03 PM</td>
 <td>
 <a href="#" class="linked" test-id='22' id='23'>Single Data Table</a>
-<div class="">
-<span class="badge badge-default">Data Table Example.Single Data Table</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:10 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='29'>Create a country with parameters</a>
-<div class="">
-<span class="badge badge-default">Country Functionality.Create a country with parameters</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:22 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='40'>Delete a country</a>
-<div class="">
-<span class="badge badge-default">Country Functionality.Delete a country</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:38 PM</td>
-<td>
-<a href="#" class="linked" test-id='22' id='49'>Single Data Table</a>
 <div class="">
 <span class="badge badge-default">Data Table Example.Single Data Table</span>
 </div>
@@ -811,15 +640,15 @@ Session ID: bf52baccacb47344f038f708275e88db
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log badge-danger'>3</span>
 </span>
-<p class="name">@Smoke</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@Regression</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Smoke</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>@Regression</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -832,19 +661,29 @@ Session ID: bf52baccacb47344f038f708275e88db
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:07 PM</td>
+<td>19:49:46 PM</td>
 <td>
-<a href="#" class="linked" test-id='22' id='23'>Single Data Table</a>
+<a href="#" class="linked" test-id='1' id='2'>Create a country with parameters</a>
 <div class="">
-<span class="badge badge-default">Data Table Example.Single Data Table</span>
+<span class="badge badge-default">Country Functionality.Create a country with parameters</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:34:38 PM</td>
+<td>19:50:03 PM</td>
 <td>
-<a href="#" class="linked" test-id='22' id='49'>Single Data Table</a>
+<a href="#" class="linked" test-id='1' id='13'>Delete a country</a>
+<div class="">
+<span class="badge badge-default">Country Functionality.Delete a country</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:50:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='23'>Single Data Table</a>
 <div class="">
 <span class="badge badge-default">Data Table Example.Single Data Table</span>
 </div>
@@ -867,13 +706,13 @@ Session ID: bf52baccacb47344f038f708275e88db
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 14, 2023 01:33:36 PM</h3>
+<h3>Sep 23, 2023 07:49:46 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 14, 2023 01:34:38 PM</h3>
+<h3>Sep 23, 2023 07:50:03 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -926,7 +765,7 @@ Session ID: bf52baccacb47344f038f708275e88db
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>6</b> scenarios failed,
+<small data-tooltip='100%'><b>3</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -944,10 +783,10 @@ Session ID: bf52baccacb47344f038f708275e88db
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='65%'><b>26</b> steps passed</small></div>
+<div><small data-tooltip='50%'><b>10</b> steps passed</small></div>
 <div>
-<small data-tooltip='15%'><b>6</b> steps failed,
-<b>8</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='25%'><b>5</b> steps failed,
+<b>5</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -963,7 +802,7 @@ Session ID: bf52baccacb47344f038f708275e88db
 </div></div>
 <script>
 var timeline = {
-"Country Functionality":62.098,"Data Table Example":31.115
+"Country Functionality":16.503,"Data Table Example":0.099
 };
 </script>
 <div class="row">
@@ -973,17 +812,17 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Regression</td>
+<td>@Smoke</td>
 <td>0</td>
-<td>6</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
 </tr>
 <tr>
-<td>@Smoke</td>
+<td>@Regression</td>
 <td>0</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
@@ -998,30 +837,6 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
-<tr>
-<td>Windows UserName</td>
-<td>baran</td>
-</tr>
-<tr>
-<td>TimeZone</td>
-<td>America/New_York</td>
-</tr>
-<tr>
-<td>Tester Name</td>
-<td>Baran</td>
-</tr>
-<tr>
-<td>Application Name</td>
-<td>Campus</td>
-</tr>
-<tr>
-<td>Operating System</td>
-<td>Windows 11</td>
-</tr>
-<tr>
-<td>Department</td>
-<td>QA</td>
-</tr>
 <tr>
 <td>Windows UserName</td>
 <td>baran</td>
@@ -1061,15 +876,15 @@ warningParent: 0,
 skipParent: 0,
 childCount: 5,
 passChild: 0,
-failChild: 6,
+failChild: 3,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 26,
-failGrandChild: 6,
+passGrandChild: 10,
+failGrandChild: 5,
 warningGrandChild: 0,
-skipGrandChild: 8,
+skipGrandChild: 5,
 infoGrandChild: 0,
 eventsCount: 5,
 };
