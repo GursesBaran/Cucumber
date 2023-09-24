@@ -24,7 +24,6 @@ public class LoginSteps {
     }
     @When("Enter username and password")
     public void enter_username_and_password() {
-        MyMethods.myWait(5);
         dc.sendKeysMethod(dc.username, "turkeyts");
         dc.sendKeysMethod(dc.password, "TechnoStudy123");
 
