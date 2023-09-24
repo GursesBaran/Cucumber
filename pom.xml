@@ -145,7 +145,7 @@
                         <version>3.1.2</version>
                         <configuration>
                             <includes>
-                                <include>**/_04_RunnerForGroups.java</include>
+                                <include>src/test/java/Runners/RunnerForGroups.java</include>
                             </includes>
                         </configuration>
                     </plugin>
@@ -163,7 +163,7 @@
                         <version>3.1.2</version>
                         <configuration>
                             <includes>
-                                <include>**/_07_RunnerWithExtentReport.java</include>
+                                <include>src/test/java/Runners/RunnerWithExtentReport.java</include>
                             </includes>
                         </configuration>
                     </plugin>
