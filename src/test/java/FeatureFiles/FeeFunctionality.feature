@@ -5,7 +5,7 @@ Feature: Fee Functionality
     And Enter username and password
     And Click on login button
     And Navigate to Fees page
-@Smoke
+#@Smoke
   Scenario: Create a Fee
     And Click on add button
     And Fill the add fee form
