@@ -9,11 +9,6 @@ import io.cucumber.testng.CucumberOptions;
         glue = "StepDefinitions",
         plugin = "html:target/site/cucumber-pretty.html"
 
-
-
-
-
-
 )
 public class RunnerWithPlugin extends AbstractTestNGCucumberTests {
 }
