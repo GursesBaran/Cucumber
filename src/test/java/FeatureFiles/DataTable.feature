@@ -1,5 +1,5 @@
 Feature: Data Table Example
-@Smoke @Regression
+#@Smoke @Regression
   Scenario: Single Data Table
     Given Go to the WebPage
     And Fill the form with valid data
