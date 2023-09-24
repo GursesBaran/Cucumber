@@ -18,7 +18,7 @@ Feature: Country Functionality
     And Enter username and password
     And Click on login button
     And Navigate to Country page
-#@Smoke
+@Smoke
   Scenario: Create a new country
 #    Given Navigate to Campus
 #    And Enter username and password
@@ -26,7 +26,7 @@ Feature: Country Functionality
 #    And Navigate to Country page
     When Create a new country
     Then Success message should be displayed
-#@Smoke
+@Smoke
   Scenario: Delete a country
 #    Given Navigate to Campus
 #    And Enter username and password
@@ -34,7 +34,7 @@ Feature: Country Functionality
 #    And Navigate to Country page
     When Delete a country
     Then Success message should be displayed
-#@Regression
+@Regression
   Scenario: Create a country with parameters
 #      Given Navigate to Campus
 #      And Enter username and password
@@ -46,7 +46,7 @@ Feature: Country Functionality
     Then Success message should be displayed
 
       #TODO Update the country you created
-#@Regression
+@Regression
   Scenario: Delete a country
 #    Given Navigate to Campus
 #    And Enter username and password
