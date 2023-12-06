@@ -22,7 +22,7 @@ public class Hooks {
     public void afterScenario(Scenario scenario) {
         endTime = LocalDateTime.now();
         Duration duration = Duration.between(startTime,endTime);
-        if (scenario.isFailed()) { // take screen shot when the scenario fails
+        if (scenario.isFailed()) { // take screenshot when the scenario fails
             final byte[] byteImage = ((TakesScreenshot) ParameterDriver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(byteImage, "image/png", scenario.getName());
         }

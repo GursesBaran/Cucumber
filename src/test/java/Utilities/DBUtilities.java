@@ -1,8 +1,6 @@
 package Utilities;
-
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
