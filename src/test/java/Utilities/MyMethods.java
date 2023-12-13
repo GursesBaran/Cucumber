@@ -30,6 +30,9 @@ public class MyMethods {
         waitUntilVisible(element);
         Assert.assertTrue(element.getText().contains(text));
     }
+    public void assertTextFalse(WebElement element, String text) {
+        Assert.assertFalse(element.getText().contains(text));
+    }
 
     public void waitUntilVisible(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
